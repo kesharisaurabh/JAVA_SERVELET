@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>servlet_10_filter_authentication</display-name>
+  <welcome-file-list>
+    <welcome-file>NewFile.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>servle</servlet-name>
+    <servlet-class>pkg.servlet_1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servle</servlet-name>
+    <url-pattern>/serv1</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>fil1</filter-name>
+    <filter-class>pkg.filter_1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>fil1</filter-name>
+    <url-pattern>/serv1</url-pattern>
+  </filter-mapping>
+</web-app>
