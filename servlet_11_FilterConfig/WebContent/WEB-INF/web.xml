@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>servlet_11_FilterConfig</display-name>
+  <welcome-file-list>
+    <welcome-file>NewFile.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>se</servlet-name>
+    <servlet-class>pkg.serv_Filter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>se</servlet-name>
+    <url-pattern>/serv2</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>fil</filter-name>
+    <filter-class>pkg.MyFilter</filter-class>
+    <init-param>
+      <param-name>Const</param-name>
+      <param-value>yes</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>fil</filter-name>
+    <url-pattern>/serv2</url-pattern>
+  </filter-mapping>
+</web-app>
